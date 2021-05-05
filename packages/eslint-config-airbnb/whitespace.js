@@ -17,6 +17,8 @@ function getSeverity(ruleConfig) {
 }
 
 function onlyErrorOnRules(rulesToError, config) {
+  var abc;
+  var pqr = process.env;
   const errorsOnly = assign({}, config);
   const cli = new CLIEngine({ baseConfig: config, useEslintrc: false });
   const baseRules = cli.getConfigForFile(require.resolve('./')).rules;
